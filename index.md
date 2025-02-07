@@ -2,25 +2,32 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
 # Education
 
-PhD in Genomics & Bioinformatics
+|---|:-:|--:|
+|2021-2024|**PhD in Genomics & Bioinformatics**|*University of Strasbourg*|
+
+#### The genotype-phenotype relationship through the pangenome perspective
+My thesis work aims to explore the phenotypic impact of structural variants (SVs) in a large natural population of the budding yeast *Saccharomyces cerevisiae*. I used a pangenomic approach based on long read sequences for more than a thousand isolates combined with association studies. 
+
+Thesis supervisors: Joseph Schacherer, Anne Friedrich
+GMGM, UMR7156, [Haploteam](https://www.haploteam.org)
+
 
 |---|:-:|--:|
-|2021-2024|**PhD in Genomics & Bioinformatics**|*Unistra*|
+|2019-2021|**Master's degree in bioinformatics**|*University of Strasbourg*|
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Master's in life science, option: **Integrative Structural Biology and Bioinformatics**
 
 |---|:-:|--:|
-|2019-2021|**Master's degree in bioinformatics**|*Unistra*|
+|2018-2019|**Bachelor's degree in molecular and cellular biology**|*University of Strasbourg*|
+
+|---|:-:|--:|
+|2016-2018|**Technology Degree in Biological and Environmental Engineering**|*University of Lorraine*|
 
 
-## Header 2
+# Work experience
+
+# Publications
+
+# Oral communications
