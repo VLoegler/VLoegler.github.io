@@ -13,7 +13,6 @@ My thesis work aims to explore the phenotypic impact of structural variants (SVs
 Thesis supervisors: Joseph Schacherer, Anne Friedrich
 GMGM, UMR7156, [Haploteam](https://www.haploteam.org)
 
-
 |---|:-:|--:|
 |2019-2021|**Master's degree in bioinformatics**|*University of Strasbourg*|
 
@@ -26,7 +25,7 @@ Master's in life science, option: **Integrative Structural Biology and Bioinform
 |2016-2018|**Technology Degree in Biological and Environmental Engineering**|*University of Lorraine*|
 
 
-# Work experience
+# Research experience
 
 # Publications
 
