@@ -11,6 +11,8 @@ layout: default
 My thesis work aims to explore the phenotypic impact of structural variants (SVs) in a large natural population of the budding yeast *Saccharomyces cerevisiae*. I used a pangenomic approach based on long read sequences for more than a thousand isolates combined with association studies. 
 
 Thesis supervisors: Joseph Schacherer, Anne Friedrich
+
+
 GMGM, UMR7156, [Haploteam](https://www.haploteam.org)
 
 |---|:-:|--:|
