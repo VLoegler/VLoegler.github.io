@@ -15,15 +15,15 @@ Thesis supervisors: Joseph Schacherer, Anne Friedrich
 
 GMGM, UMR7156, [Haploteam](https://www.haploteam.org)
 
+|	|	|	|
 |---|:-:|--:|
 |2019-2021|**Master's degree in bioinformatics**|*University of Strasbourg*|
 
 Master's in life science, option: **Integrative Structural Biology and Bioinformatics**
 
+|	|	|	|
 |---|:-:|--:|
 |2018-2019|**Bachelor's degree in molecular and cellular biology**|*University of Strasbourg*|
-
-|---|:-:|--:|
 |2016-2018|**Technology Degree in Biological and Environmental Engineering**|*University of Lorraine*|
 
 
