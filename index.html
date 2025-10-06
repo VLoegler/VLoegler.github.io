@@ -26,7 +26,28 @@
 		  white-space: nowrap; /* Prevents line breaks */
 		  text-overflow: ellipsis;
 		}
-	  </style>
+	</style>
+	<style>
+		:root{ --nav-height:80px; } /* adjust to your nav height */
+		.main-nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1000;
+			background-color: white; /* adjust as needed */
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		body {padding-top: 80px; /* adjust to match nav height */}
+		/* fallback pseudo-element (target your .section elements) */
+		.section[id]::before{
+			content:"";
+			display:block;
+			height:var(--nav-height);
+			margin-top:calc(-1 * var(--nav-height));
+			visibility:hidden;
+		}
+	</style>
 </head>
 <body>
 	<!-- Navigation -->
@@ -66,7 +87,12 @@
 		<p style="text-align:right; color:#bbbbbb">
 			<a href="mailto:loegler.victor@gmail.com" style="color:inherit">loegler.victor@gmail.com</a> | 
 			<a href="https://github.com/VLoegler" style="color:inherit">GitHub</a> | 
-			<a href="https://www.linkedin.com/in/victor-loegler-014446167/" style="color:inherit">LinkedIn</a></p>
+			<a href="https://www.linkedin.com/in/victor-loegler-014446167/" style="color:inherit">LinkedIn</a>
+		</p>
+		<p style="text-align:justify">
+			PhD in genetics with strong expertise in genomics, bioinformatics, and multi-omics data integration. Experienced in analyzing complex genetic datasets, applying statistical and computational analyses, and translating results into clear visualizations and insights. Skilled in data science, machine learning, and scientific communication. Seeking roles in genetics or data science to apply analytical expertise to real-world biological challenges.
+		</p>
+
 		</div>
 	</div>
 
@@ -116,45 +142,41 @@
 	<div class="work section second" id="experiences">
 		<div class="container">
 
-			<h1>Research<br>Experiences</h1>
+			<h1>Research Experiences</h1>
 
 			<ul class="work-list">
 				<li>February – July 2025</li>
-				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Postoctoral position</li>
+				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Postoctoral researcher</li>
 				<li><a href="https://www.haploteam.org" style="color: inherit; text-decoration: none; font-weight: inherit; font-size: inherit;">Haploteam</a>, GMGM, Université de Strasbourg, France</li>
-				<p>
-					<ul style="list-style-type: disc !important; display: block !important; margin-left: 20px;">
-						<li style="list-style-type: disc;">Performed genomic data analysis to uncover thousands of structural variants across hundreds of polyploid yeast isolates, using a graph pangenomic approach. </li>
-						<li style="list-style-type: disc;">Developed proficiency in handling complex genomic datasets, developing computational pipelines, statistical modeling, interpreting evolutionary patterns, coordinating projects, managing interns, and writing scientific publications.</li>
-					</ul>
-				</p>
+				<ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+					<li style="list-style-type: disc; color: #4e4e4e;">Performed genomic data analysis to uncover thousands of structural variants across hundreds of polyploid yeast isolates, using a graph pangenomic approach. </li>
+					<li style="list-style-type: disc; color: #4e4e4e;">Developed proficiency in handling complex genomic datasets, developing computational pipelines, statistical modeling, interpreting evolutionary patterns, coordinating projects, managing interns, and writing scientific publications.</li>
+				</ul>
 			</ul>
 
 			<ul class="work-list">
 				<li>2021-2024</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">PhD in genomics, quantitative genetics and bioinformatics</li>
 				<li><a href="https://www.haploteam.org" style="color: inherit; text-decoration: none; font-weight: inherit; font-size: inherit;">Haploteam</a>, GMGM, Université de Strasbourg, France</li>
-				<p><b>Thesis title:</b> The genotype phenotype relationship through the pangenome perspective
-					<ul style="list-style-type: disc; margin-left: 20px;">
-						<li style="list-style-type: disc;">Led large-scale analysis of genomic and phenotypic data from 1,000+ yeast isolates, constructing a comprehensive structural variant atlas and conducting GWAS across 8,000+ traits. </li>
-						<li style="list-style-type: disc;">Acquired advanced expertise in statistical data analysis, data visualization, scientific communication, and project management. </li>
-						<li style="list-style-type: disc;">Produced three first-author publications in high-impact journals. </li>
-					</ul>
-					<b>Supervisors:</b> Joseph Schacherer and Anne Friedrich
-				</p>
+				<p style="margin-bottom: 0;"><b>Thesis title:</b> The genotype phenotype relationship through the pangenome perspective</p>
+				<ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+					<li style="list-style-type: disc; color: #4e4e4e;">Led large-scale analysis of genomic and phenotypic data from 1,000+ yeast isolates, constructing a comprehensive structural variant atlas and conducting GWAS across 8,000+ traits. </li>
+					<li style="list-style-type: disc; color: #4e4e4e;">Acquired advanced expertise in statistical data analysis, data visualization, scientific communication, and project management. </li>
+					<li style="list-style-type: disc; color: #4e4e4e;">Produced three first-author publications in high-impact journals. </li>
+				</ul>
+				<p><b>Supervisors:</b> Joseph Schacherer and Anne Friedrich</p>
 			</ul>
 
 			<ul class="work-list">
 				<li>2021 (6 months)</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Research internship</li>
 				<li><a href="https://biom.obs-banyuls.fr/fr/equipe-genophy.html" style="color: inherit; text-decoration: none; font-weight: inherit; font-size: inherit;">Team Genophy</a>, Observatoire Océanologique de Banyuls-Sur-Mer, France</li>
-				<p>
-					<ul style="list-style-type: disc; margin-left: 20px;">
-						<li style="list-style-type: disc;">Performed population genomics analysis of 35 Ostreococcus sp. isolates using long-read (ONT) and short-read (Illumina) sequencing.</li>
-						<li style="list-style-type: disc;">Gained competences in variant calling, phylogenetic and population structure analyses, genome comparisons, and adapting methods to a non-model organism.</li>
-						<li style="list-style-type: disc;">Developed strong skills in Python, R, Bash, and high-performance computing (SLURM).</li>
-					</ul>
-					<b>Supervisor:</b> Gwenael Piganeau</p>
+				<ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+					<li style="list-style-type: disc; color: #4e4e4e;">Performed population genomics analysis of 35 Ostreococcus sp. isolates using long-read (ONT) and short-read (Illumina) sequencing.</li>
+					<li style="list-style-type: disc; color: #4e4e4e;">Gained competences in variant calling, phylogenetic and population structure analyses, genome comparisons, and adapting methods to a non-model organism.</li>
+					<li style="list-style-type: disc; color: #4e4e4e;">Developed strong skills in Python, R, Bash, and high-performance computing (SLURM).</li>
+				</ul>
+				<p><b>Supervisor:</b> Gwenael Piganeau</p>
 			</ul>
 
 			<ul class="work-list">
@@ -214,6 +236,13 @@
 	<div class="award section second" id="publications">
 		<div class="container">
 			<h1>Publications</h1>
+
+			<ul class="award-list list-flat">
+				<img src="img/Loegler2025_BioRXiv.jpeg" style="width: 300px; height: auto;" alt="Publication Image" class="award-image">
+				<li style="font-weight: bold; font-size: 13pt">Graph-based pangenome analysis uncovers structural and functional impacts of allopolyploidization events</li>
+				<li style="color: #7290E9">Loegler V, Friedrich A, Schacherer J. 2025. </li>
+				<li style="color: #999999">BioRxiv. <a href="https://www.doi.org/10.1101/2025.08.26.672342">doi:10.1101/2025.08.26.672342</a></li>
+			</ul>
 
 			<ul class="award-list list-flat">
 				<img src="img/Loegler2025_NatCom.jpeg" style="width: 300px; height: auto;" alt="Publication Image" class="award-image">
@@ -295,5 +324,66 @@
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
+	<script>
+	(function(){
+	const navHeight = 80;           // actual nav height in px
+	const scrollDuration = 600;     // scroll speed in ms
+	const sections = document.querySelectorAll('.section[id]');
+	const navLinks = document.querySelectorAll('.navbar ul li a');
+
+	function updateActive(){
+		let current = '';
+		sections.forEach(section => {
+		const top = section.offsetTop - navHeight * 3; // smaller offset for better alignment
+		if (window.scrollY >= top) current = section.id;
+		});
+		navLinks.forEach(link => {
+		link.parentElement.classList.toggle(
+			'active',
+			link.getAttribute('href') === '#' + current
+		);
+		});
+	}
+
+	window.addEventListener('scroll', updateActive, {passive:true});
+	updateActive();
+
+	function smoothScrollTo(targetY, duration){
+		const startY = window.scrollY;
+		const distance = targetY - startY;
+		let startTime = null;
+		function step(timestamp){
+		if (!startTime) startTime = timestamp;
+		const progress = Math.min((timestamp - startTime) / duration, 1);
+		const ease = 0.5 * (1 - Math.cos(Math.PI * progress));
+		window.scrollTo(0, startY + distance * ease);
+		if (progress < 1) requestAnimationFrame(step);
+		}
+		requestAnimationFrame(step);
+	}
+
+	document.addEventListener('click', function(e){
+		const a = e.target.closest('a[href]');
+		if (!a) return;
+		const href = a.getAttribute('href');
+		if (!href.startsWith('#')) return;
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		const id = href === '#' ? '' : href;
+
+		if (id === '#about' || id === ''){
+		smoothScrollTo(0, scrollDuration);
+		history.replaceState(null, '', '#about');
+		return;
+		}
+
+		const target = document.querySelector(id);
+		if (!target) return;
+		const y = target.getBoundingClientRect().top + window.pageYOffset - (navHeight / 2);
+		smoothScrollTo(y, scrollDuration);
+		history.replaceState(null, '', id);
+	}, true);
+	})();
+	</script>
 </body>
 </html>
