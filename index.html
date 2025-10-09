@@ -48,6 +48,13 @@
 			visibility:hidden;
 		}
 	</style>
+	<style>
+		.container {
+			max-width: 750px; /* default is ~960px; increase as desired */
+			width: 90%;        /* keeps it responsive */
+			margin: 0 auto;    /* centers content */
+		}
+	</style>
 </head>
 <body>
 	<!-- Navigation -->
@@ -65,6 +72,7 @@
 				        <li><a href="#skills">Skills</a></li>
 				        <li><a href="#publications">Publications</a></li>
 				        <li><a href="#communications">Communications</a></li>
+				        <li><a href="#portfolio">Portfolio</a></li>
 				    </ul>
 				</nav>
 			</header>
@@ -205,81 +213,127 @@
 		</div>
 	</div>
 
-	<!-- Skills -->
+	<!-- Skills Section -->
 	<div class="skills section second" id="skills">
 		<div class="container">
 			<h1>Skills</h1>
-			<ul class="skill-list list-flat">
-				<li>Genomics & bioinformatics</li>
-				<li>Population genetics, Variant detection, GWAS, Transcriptomics, Sequences alignments, Genome assemblies, Illumina, Oxford Nanopore Technology</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Programming & Data Analysis</li>
-				<li>Python (Pandas, NumPy, SciPy, PyTorch), R (tidyverse, Bioconductor), SQL, Bash/UNIX, HPC SLURM, snakemake, git</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Machine Learning & Statistics</li>
-				<li>Supervised/unsupervised learning, regression models, clustering, dimensionality reduction, statistical testing, data visualization</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Soft Skills</li>
-				<li>Project management, Data interpretation & critical thinking, Technical writing & manuscript preparation, Collaboration in multidisciplinary teams</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Languages</li>
-				<li>French, English</li>
-			</ul>
+			<div class="skills-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+				<!-- Skill Card 1 -->
+				<div class="skill-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); background-color: #fafafa;">
+					<p style="margin-top:0; margin-bottom: 8px; font-weight: bold; font-size: 14pt; color:#4169E1;">Genomics & Bioinformatics</p>
+					<p>Population genetics, Variant detection, GWAS, Transcriptomics, Sequence alignments, Genome assemblies, Illumina, Oxford Nanopore Technology</p>
+				</div>
+
+				<!-- Skill Card 2 -->
+				<div class="skill-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); background-color: #fafafa;">
+					<p style="margin-top:0; margin-bottom: 8px; font-weight: bold; font-size: 14pt; color:#4169E1;">Programming & Data Analysis</p>
+					<p>Python (Pandas, NumPy, SciPy, PyTorch), R (tidyverse, Bioconductor), SQL, Bash/UNIX, HPC SLURM, Snakemake, Git</p>
+				</div>
+
+				<!-- Skill Card 3 -->
+				<div class="skill-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); background-color: #fafafa;">
+					<p style="margin-top:0; margin-bottom: 8px; font-weight: bold; font-size: 14pt; color:#4169E1;">Machine Learning & Statistics</p>
+					<p>Supervised/unsupervised learning, Regression models, Clustering, Dimensionality reduction, Statistical testing, Data visualization</p>
+				</div>
+
+				<!-- Skill Card 4 -->
+				<div class="skill-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); background-color: #fafafa;">
+					<p style="margin-top:0; margin-bottom: 8px; font-weight: bold; font-size: 14pt; color:#4169E1;">Soft Skills</p>
+					<p>Project management, Data interpretation & critical thinking, Technical writing & manuscript preparation, Collaboration in multidisciplinary teams</p>
+				</div>
+
+				<!-- Skill Card 5 -->
+				<div class="skill-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); background-color: #fafafa;">
+					<p style="margin-top:0; margin-bottom: 8px; font-weight: bold; font-size: 14pt; color:#4169E1;">Languages</p>
+					<p>French (Native), English</p>
+				</div>
+
+			</div>
 		</div>
 	</div>
 
-	<!-- Publications -->
+	<!-- Publications Section -->
 	<div class="award section second" id="publications">
 		<div class="container">
 			<h1>Publications</h1>
 
-			<ul class="award-list list-flat">
-				<img src="img/Loegler2025_BioRXiv.jpeg" style="width: 300px; height: auto;" alt="Publication Image" class="award-image">
-				<li style="font-weight: bold; font-size: 13pt">Graph-based pangenome analysis uncovers structural and functional impacts of allopolyploidization events</li>
-				<li style="color: #7290E9">Loegler V, Friedrich A, Schacherer J. 2025. </li>
-				<li style="color: #999999">BioRxiv. <a href="https://www.doi.org/10.1101/2025.08.26.672342">doi:10.1101/2025.08.26.672342</a></li>
-			</ul>
+			<!-- Loegler 2025 BioRXiv -->
+			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
+					<img src="img/Loegler2025_BioRXiv.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+				</div>
+				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
+					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Graph-based pangenome analysis uncovers structural and functional impacts of allopolyploidization events</p>
+					<p style="color: #7290E9; margin: 2px 0;">Loegler V, Friedrich A, Schacherer J. 2025.</p>
+					<p style="color: #999999; margin: 2px 0;">BioRxiv. <a href="https://www.doi.org/10.1101/2025.08.26.672342" target="_blank">doi:10.1101/2025.08.26.672342</a></p>
+				</div>
+			</div>
 
-			<ul class="award-list list-flat">
-				<img src="img/Loegler2025_NatCom.jpeg" style="width: 300px; height: auto;" alt="Publication Image" class="award-image">
-				<li style="font-weight: bold; font-size: 13pt">Whole-genome sequencing of 1,060 Brettanomyces bruxellensis isolates reveals significant phenotypic impact of acquired subgenomes in allopolyploids</li>
-				<li style="color: #7290E9">Loegler V, Runge JN, Eberlein C, Peltier E, Harrouard J, Miot-Sertier C, Albertin W, Friedrich A, Schacherer J. 2025. </li>
-				<li style="color: #999999">Nat Commun 16, 5500. <a href="https://www.doi.org/10.1038/s41467-025-60706-4">doi:10.1038/s41467-025-60706-4</a></li>
-			</ul>
+			<!-- Loegler 2025 NatCom -->
+			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
+					<img src="img/Loegler2025_NatCom.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+				</div>
+				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
+					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Whole-genome sequencing of 1,060 Brettanomyces bruxellensis isolates reveals significant phenotypic impact of acquired subgenomes in allopolyploids</p>
+					<p style="color: #7290E9; margin: 2px 0;">Loegler V, Runge JN, Eberlein C, Peltier E, Harrouard J, Miot-Sertier C, Albertin W, Friedrich A, Schacherer J. 2025.</p>
+					<p style="color: #999999; margin: 2px 0;">Nat Commun 16, 5500. <a href="https://www.doi.org/10.1038/s41467-025-60706-4" target="_blank">doi:10.1038/s41467-025-60706-4</a></p>
+				</div>
+			</div>
 
-			<ul class="award-list list-flat">
-				<img src="img/loegler2024.jpeg" style="width: 300px; height: auto;" alt="Publication Image" class="award-image">
-				<li style="font-weight: bold; font-size: 13pt">Overview of the Saccharomyces cerevisiae population structure through the lens of 3,034 genomes</li>
-				<li style="color: #7290E9">Loegler V, Friedrich A, Schacherer J. 2024. </li>
-				<li style="color: #999999">G3 Genes|Genomes|Genetics 14:jkae245. <a href="https://www.doi.org/10.1093/g3journal/jkae245">doi:10.1093/g3journal/jkae245</a></li>
-			</ul>
+			<!-- Loegler 2024 G3 -->
+			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
+					<img src="img/loegler2024.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+				</div>
+				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
+					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Overview of the Saccharomyces cerevisiae population structure through the lens of 3,034 genomes</p>
+					<p style="color: #7290E9; margin: 2px 0;">Loegler V, Friedrich A, Schacherer J. 2024.</p>
+					<p style="color: #999999; margin: 2px 0;">G3 Genes|Genomes|Genetics 14:jkae245. <a href="https://www.doi.org/10.1093/g3journal/jkae245" target="_blank">doi:10.1093/g3journal/jkae245</a></p>
+				</div>
+			</div>
 
-			<ul class="award-list list-flat">
-				<img src="img/teyssonniere2024.jpeg" style="width: 300px; height: auto;" alt="Publication Image" class="award-image">
-				<li style="font-weight: bold; font-size: 13pt">Species-wide quantitative transcriptomes and proteomes reveal distinct genetic control of gene expression variation in yeast</li>
-				<li style="color: #7290E9">Teyssonnière EM,Trébulle P, Muenzner J, Loegler V, Ludwig D, Amari F, Mülleder M, Friedrich A, Hou J, Ralser M, Schacherer J. 2024. </li>
-				<li style="color: #999999">Proceedings of the National Academy of Sciences 121:e2319211121. <a href="https://www.doi.org/10.1073/pnas.2319211121">doi:10.1073/pnas.2319211121</a></li>
-			</ul>
+			<!-- Teyssonniere 2024 PNAS -->
+			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
+					<img src="img/teyssonniere2024.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+				</div>
+				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
+					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Species-wide quantitative transcriptomes and proteomes reveal distinct genetic control of gene expression variation in yeast</p>
+					<p style="color: #7290E9; margin: 2px 0;">Teyssonnière EM, Trébulle P, Muenzner J, Loegler V, Ludwig D, Amari F, Mülleder M, Friedrich A, Hou J, Ralser M, Schacherer J. 2024.</p>
+					<p style="color: #999999; margin: 2px 0;">PNAS 121:e2319211121. <a href="https://www.doi.org/10.1073/pnas.2319211121" target="_blank">doi:10.1073/pnas.2319211121</a></p>
+				</div>
+			</div>
 
-			<ul class="award-list list-flat">
-				<img src="img/caudal2024.jpeg" style="width: 300px; height: auto;" alt="Publication Image" class="award-image">
-				<li style="font-weight: bold; font-size: 13pt">Pan-transcriptome reveals a large accessory genome contribution to gene expression variation in yeast</li>
-				<li style="color: #7290E9">Caudal É, Loegler V, Dutreux F, Vakirlis N, Teyssonnière É, Caradec C, Friedrich A, Hou J, Schacherer J. 2024. </li>
-				<li style="color: #999999">Nat Genet 56:1278–1287. <a href="https://www.doi.org/10.1038/s41588-024-01769-9">doi:10.1038/s41588-024-01769-9</a></li>
-			</ul>
+			<!-- Caudal 2024 NatGen -->
+			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
+					<img src="img/caudal2024.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+				</div>
+				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
+					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Pan-transcriptome reveals a large accessory genome contribution to gene expression variation in yeast</p>
+					<p style="color: #7290E9; margin: 2px 0;">Caudal É, Loegler V, Dutreux F, Vakirlis N, Teyssonnière É, Caradec C, Friedrich A, Hou J, Schacherer J. 2024.</p>
+					<p style="color: #999999; margin: 2px 0;">Nat Genet 56:1278–1287. <a href="https://www.doi.org/10.1038/s41588-024-01769-9" target="_blank">doi:10.1038/s41588-024-01769-9</a></p>
+				</div>
+			</div>
 
-			<ul class="award-list list-flat">
-				<li style="font-weight: bold; font-size: 13pt; color: #4e4e4e">RNA Modifications in Pathogenic Bacteria: Impact on Host Adaptation and Virulence</li>
-				<li style="color: #7290E9">Antoine L, Bahena-Ceron R, Devi Bunwaree H, Gobry M, Loegler V, Romby P, Marzi S. 2021. </li>
-				<li style="color: #999999">Genes 12:1125. <a href="https://www.doi.org/10.3390/genes12081125">doi:10.3390/genes12081125</a></li>
-			</ul>
+			<!-- Antoine 2021 -->
+			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
+					<!-- No image available, use empty white box -->
+					<div style="width: 100%; height: 100px; background-color: white; border: 1px solid white; border-radius: 4px;"></div>
+				</div>
+				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
+					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">RNA Modifications in Pathogenic Bacteria: Impact on Host Adaptation and Virulence</p>
+					<p style="color: #7290E9; margin: 2px 0;">Antoine L, Bahena-Ceron R, Devi Bunwaree H, Gobry M, Loegler V, Romby P, Marzi S. 2021.</p>
+					<p style="color: #999999; margin: 2px 0;">Genes 12:1125. <a href="https://www.doi.org/10.3390/genes12081125" target="_blank">doi:10.3390/genes12081125</a></p>
+				</div>
+			</div>
 
 		</div>
 	</div>
+
 
 	<!-- Communication -->
 	<div class="award section second" id="communications">
@@ -297,6 +351,46 @@
 			</ul>
 
 
+		</div>
+	</div>
+
+	<!-- Portfolio Section -->
+	<div class="work section second" id="portfolio">
+		<div class="container">
+			<h1>Portfolio</h1>
+			<p>A selection of machine learning projects applying ML and deep learning to genomics and transcriptomics data.</p>
+
+			<div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+				<!-- Project 1 -->
+				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+					<h3>Human Ancestry Prediction from SNP Data</h3>
+					<p style="flex-grow: 1;">Predict ancestry from SNP data using KNN, Random Forest, Neural Networks, and ensembles. Focus on feature encoding and supervised classification.</p>
+					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/1000genomesAncestry.ipynb" target="_blank">View Notebook</a>
+				</div>
+
+				<!-- Project 2 -->
+				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+					<h3>Explainable Breast Cancer Subtype Classification</h3>
+					<p style="flex-grow: 1;">Classify breast cancer samples into PAM50 subtypes using XGBoost and Neural Networks with SHAP interpretability.</p>
+					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/BreastCancerClassification.ipynb" target="_blank">View Notebook</a>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+					<h3>Single-Cell RNA-Seq Clustering & Classification</h3>
+					<p style="flex-grow: 1;">Cluster and predict immune cell types. PCA+Leiden, K-Means, Hierarchical clustering, Logistic Regression, Random Forest, MLP.</p>
+					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/SingleCellRNASeq.ipynb" target="_blank">View Notebook</a>
+				</div>
+
+				<!-- Project 4 -->
+				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
+					<h3>Transcription Factor Binding Site Prediction</h3>
+					<p style="flex-grow: 1;">Predict TF binding sites from DNA sequences using a PyTorch CNN. Focus on sequence encoding and motif-level interpretation.</p>
+					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/TFBindingSitePrediction.ipynb" target="_blank">View Notebook</a>
+				</div>
+			</div>
+
+			<p><br>Full portfolio on <a href="https://github.com/VLoegler/Machine-Learning-Portfolio" target="_blank">GitHub</a>.</p>
 		</div>
 	</div>
 
