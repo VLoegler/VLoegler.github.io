@@ -55,6 +55,28 @@
 			margin: 0 auto;    /* centers content */
 		}
 	</style>
+	<style>
+	.portfolio-card {
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: #fafafa;
+	transition: all 0.1s ease;
+	height: 100%;
+	}
+
+	.portfolio-card:hover {
+	background-color: #f0f4ff;
+	transform: translateY(-3px);
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	}
+
+	.portfolio-grid a {
+	text-decoration: none;
+	color: inherit;
+	flex: 1 1 calc(50% - 20px);
+	}
+	</style>
 </head>
 <body>
 	<!-- Navigation -->
@@ -361,33 +383,54 @@
 			<p>A selection of machine learning projects applying ML and deep learning to genomics and transcriptomics data.</p>
 
 			<div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
-				<!-- Project 1 -->
-				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
-					<h3>Human Ancestry Prediction from SNP Data</h3>
-					<p style="flex-grow: 1;">Predict ancestry from SNP data using KNN, Random Forest, Neural Networks, and ensembles. Focus on feature encoding and supervised classification.</p>
-					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/1000genomesAncestry.ipynb" target="_blank">View Notebook</a>
-				</div>
 
-				<!-- Project 2 -->
-				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
-					<h3>Explainable Breast Cancer Subtype Classification</h3>
-					<p style="flex-grow: 1;">Classify breast cancer samples into PAM50 subtypes using XGBoost and Neural Networks with SHAP interpretability.</p>
-					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/BreastCancerClassification.ipynb" target="_blank">View Notebook</a>
-				</div>
+				<!-- Card 1 -->
+				<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/1000genomesAncestry.ipynb"
+				target="_blank"
+				style="text-decoration: none; color: inherit; flex: 1 1 calc(50% - 20px);">
+					<div class="portfolio-card" style="display:flex; flex-direction:column; padding:15px; height:100%;">
+						<p style="margin-top:0; color:#4169E1; font-weight: bold; font-size: 13pt;">Human Ancestry Prediction from SNP Data</p>
+						<p style="margin-bottom: 5px;"><b>Goal:</b> Predict ancestry from SNP data</p>
+						<p style="margin-bottom: 5px;"><b>Models:</b> KNN, Random Forest, Dense Neural Network, Ensemble</p>
+						<p style="margin-bottom: 0;"><b>Focus:</b> Feature encoding, classification, ensemble learning</p>
+					</div>
+				</a>
 
-				<!-- Project 3 -->
-				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
-					<h3>Single-Cell RNA-Seq Clustering & Classification</h3>
-					<p style="flex-grow: 1;">Cluster and predict immune cell types. PCA+Leiden, K-Means, Hierarchical clustering, Logistic Regression, Random Forest, MLP.</p>
-					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/SingleCellRNASeq.ipynb" target="_blank">View Notebook</a>
-				</div>
+				<!-- Card 2 -->
+				<a href="https://github.com/VLoegler/machine-learning-portfolio/blob/main/BreastCancerClassification.ipynb"
+				target="_blank"
+				style="text-decoration: none; color: inherit; flex: 1 1 calc(50% - 20px);">
+					<div class="portfolio-card" style="display:flex; flex-direction:column; padding:15px; height:100%;">
+						<p style="margin-top:0; color:#4169E1; font-weight: bold; font-size: 13pt;">Explainable Breast Cancer Subtype Classification</p>
+						<p style="margin-bottom: 5px;"><b>Goal:</b> Classify samples into PAM50 subtypes</p>
+						<p style="margin-bottom: 5px;"><b>Models:</b> XGBoost, Dense Neural Network</p>
+						<p style="margin-bottom: 0;"><b>Focus:</b> Multi-class classification, SHAP interpretability</p>
+					</div>
+				</a>
 
-				<!-- Project 4 -->
-				<div class="portfolio-card" style="flex: 1 1 calc(50% - 20px); padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column;">
-					<h3>Transcription Factor Binding Site Prediction</h3>
-					<p style="flex-grow: 1;">Predict TF binding sites from DNA sequences using a PyTorch CNN. Focus on sequence encoding and motif-level interpretation.</p>
-					<a href="https://github.com/VLoegler/Machine-Learning-Portfolio/blob/main/TFBindingSitePrediction.ipynb" target="_blank">View Notebook</a>
-				</div>
+				<!-- Card 3 -->
+				<a href="https://github.com/VLoegler/machine-learning-portfolio/blob/main/SingleCellRNASeq.ipynb"
+				target="_blank"
+				style="text-decoration: none; color: inherit; flex: 1 1 calc(50% - 20px);">
+					<div class="portfolio-card" style="display:flex; flex-direction:column; padding:15px; height:100%;">
+						<p style="margin-top:0; color:#4169E1; font-weight: bold; font-size: 13pt;">Single-Cell RNA-Seq Clustering & Classification</p>
+						<p style="margin-bottom: 5px;"><b>Goal:</b> Cluster and predict immune cell types</p>
+						<p style="margin-bottom: 5px;"><b>Models:</b> PCA+Leiden, K-Means, RF, MLP</p>
+						<p style="margin-bottom: 0;"><b>Focus:</b> Dimensionality reduction, label transfer</p>
+					</div>
+				</a>
+
+				<!-- Card 4 -->
+				<a href="https://github.com/VLoegler/machine-learning-portfolio/blob/main/TFBindingSitePrediction.ipynb"
+				target="_blank"
+				style="text-decoration: none; color: inherit; flex: 1 1 calc(50% - 20px);">
+					<div class="portfolio-card" style="display:flex; flex-direction:column; padding:15px; height:100%;">
+						<p style="margin-top:0; color:#4169E1; font-weight: bold; font-size: 13pt;">Transcription Factor Binding Site Prediction</p>
+						<p style="margin-bottom: 5px;"><b>Goal:</b> Predict TF binding sites from DNA</p>
+						<p style="margin-bottom: 5px;"><b>Model:</b> CNN (PyTorch)</p>
+						<p style="margin-bottom: 0;"><b>Focus:</b> Sequence encoding, CNN interpretation</p>
+					</div>
+				</a>
 			</div>
 
 			<p><br>Full portfolio on <a href="https://github.com/VLoegler/Machine-Learning-Portfolio" target="_blank">GitHub</a>.</p>
