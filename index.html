@@ -2,33 +2,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Victor Loegler</title>
+    <!-- ===================================== -->
+    <!-- Meta & Title -->
+    <!-- ===================================== -->
+	<title>Victor Loegler</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Resume">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.min.css" />
+
+    <!-- ===================================== -->
+    <!-- Stylesheets -->
+    <!-- ===================================== -->
+	<link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.min.css" />
-    <link rel="shortcut icon" href="img/favicon.png" />
+
+	<!-- ===================================== -->
+    <!-- Fonts -->
+    <!-- ===================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- ===================================== -->
+    <!-- Inline Styles -->
+    <!-- ===================================== -->
 	<style>
+
 		.intro h1:before {
 			/* Edit this with your name or anything else */
 			content: 'RESUME';
 		}
-	</style>
-	<style>
+
 		#typed {
-		  /*font-size: 40px; /* Adjust this value as needed */
-		  white-space: nowrap; /* Prevents line breaks */
-		  text-overflow: ellipsis;
+			/*font-size: 40px; /* Adjust this value as needed */
+			white-space: nowrap; /* Prevents line breaks */
+			text-overflow: ellipsis;
 		}
-	</style>
-	<style>
+
 		:root{ --nav-height:80px; } /* adjust to your nav height */
+
 		.main-nav {
 			position: fixed;
 			top: 0;
@@ -38,7 +52,9 @@
 			background-color: white; /* adjust as needed */
 			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 		}
+
 		body {padding-top: 80px; /* adjust to match nav height */}
+
 		/* fallback pseudo-element (target your .section elements) */
 		.section[id]::before{
 			content:"";
@@ -47,39 +63,115 @@
 			margin-top:calc(-1 * var(--nav-height));
 			visibility:hidden;
 		}
-	</style>
-	<style>
+
 		.container {
 			max-width: 750px; /* default is ~960px; increase as desired */
 			width: 90%;        /* keeps it responsive */
 			margin: 0 auto;    /* centers content */
 		}
-	</style>
-	<style>
-	.portfolio-card {
-	padding: 15px;
-	border: 1px solid #ddd;
-	border-radius: 10px;
-	background-color: #fafafa;
-	transition: all 0.1s ease;
-	height: 100%;
-	}
 
-	.portfolio-card:hover {
-	background-color: #f0f4ff;
-	transform: translateY(-3px);
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-	}
+		.portfolio-card {
+			padding: 15px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			background-color: #fafafa;
+			transition: all 0.1s ease;
+			height: 100%;
+		}
 
-	.portfolio-grid a {
-	text-decoration: none;
-	color: inherit;
-	flex: 1 1 calc(50% - 20px);
-	}
+		.portfolio-card:hover {
+			background-color: #f0f4ff;
+			transform: translateY(-3px);
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+		}
+
+		.portfolio-grid a {
+			text-decoration: none;
+			color: inherit;
+			flex: 1 1 calc(50% - 20px);
+		}
+
+		/* Publication cards */
+		/* clickable layout */
+		.publication-link {
+			text-decoration: none;
+			color: inherit;
+			display: block;
+			transition: all 0.1s ease;
+		}
+
+		.publication-link:hover {
+			background-color: #f0f4ff;
+			border-color: #4169E1;
+			transform: translateY(-3px);
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+			border-radius: 6px;
+		}
+
+		/* main flex container */
+		.publication-item {
+			display: flex;
+			align-items: center;            /* vertical centering of image */
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 6px;
+			background-color: white;
+			transition: all 0.1s ease;
+			margin-bottom: 20px;
+		}
+
+		/* left image block */
+		.pub-image {
+			flex: 0 0 25%;
+			padding: 10px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.pub-image img {
+			width: 100%;
+			height: 100px;
+			object-fit: contain;
+			background-color: white;
+			border: 1px solid white;
+			border-radius: 4px;
+		}
+
+		/* right text block */
+		.pub-text {
+			flex: 1 1 75%;
+			padding-left: 15px;
+		}
+
+		/* text formatting */
+		.pub-title {
+			font-weight: bold;
+			font-size: 13pt;
+			margin: 0 0 2px 0;
+		}
+
+		.pub-authors {
+			color: #7290E9;
+			margin: 2px 0;
+		}
+
+		.pub-journal {
+			color: #999999;
+			margin: 2px 0;
+		}
+
+		.pub-doi {
+			color: inherit;
+			text-decoration: underline;
+		}
 	</style>
 </head>
 <body>
-	<!-- Navigation -->
+    <!-- ===================================== -->
+    <!-- Navigation -->
+    <!-- ===================================== -->
 	<div class="main-nav">
 		<div class="container">
 			<header class="group top-nav">
@@ -101,7 +193,9 @@
 		</div>
 	</div>
 
-	<!-- Introduction -->
+    <!-- ===================================== -->
+    <!-- Intro Section -->
+    <!-- ===================================== -->
 	<div class="intro section" id="about">
 		<div class="container">
 			<div class="units-row units-split wrap">
@@ -126,10 +220,14 @@
 		</div>
 	</div>
 
-	<!-- Education -->
+    <!-- ===================================== -->
+    <!-- Education Section -->
+    <!-- ===================================== -->
 	<div class="work section second" id="education">
 		<div class="container">
 			<h1>Education</h1>
+
+            <!-- PhD -->
 			<ul class="work-list">
 				<li>2021-2024</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">PhD in genomics, quantitative genetics and bioinformatics</li>
@@ -137,28 +235,39 @@
 				<p><b>Thesis title:</b> The genotype phenotype relationship through the pangenome perspective<br>
 					<b>Supervisors:</b> Joseph Schacherer and Anne Friedrich</p>
 			</ul>
+
+            <!-- Master -->
 			<ul class="work-list">
 				<li>2019-2021</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Master's degree in life sciences: Integrative structural biology and bioinformatics</li>
 				<li>Université de Strasbourg, France</li>
 			</ul>
+
+            <!-- Bachelor -->
 			<ul class="work-list">
 				<li>2018-2019</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Bachelor's degree in life sciences: Molecular and cellular biology</li>
 				<li>Université de Strasbourg, France</li>
 			</ul>
+
+            <!-- Technology degree -->
 			<ul class="work-list">
 				<li>2016-2018</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Technology degree: Biological and Environmental Engineering</li>
 				<li>Université de Lorraine, France</li>
 			</ul>
+
 			<h2>Trainings</h2>
+
+            <!-- Training 1 -->
 			<ul class="work-list">
 				<li>2025 – 4 days</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Introduction to Machine Learning with Python</li>
 				<li>Swiss Institute of Bioinformatics, Switzerland</li>
 				<p><a href="https://www.sib.swiss/training/course/20241003_INMLP" style="color: inherit; text-decoration: none; font-weight: inherit; font-size: inherit;">Course website</a></p>
 			</ul>
+
+            <!-- Training 2 -->
 			<ul class="work-list">
 				<li>2022 – 5 days</li>
 				<li style="color: #4169E1; font-weight: bold; font-size: 13pt">Summer school: Artificial Intelligence for Biologists</li>
@@ -168,7 +277,9 @@
 		</div>
 	</div>
 
-	<!-- Work Experience -->
+    <!-- ===================================== -->
+    <!-- Research Experiences Section -->
+    <!-- ===================================== -->
 	<div class="work section second" id="experiences">
 		<div class="container">
 
@@ -235,7 +346,9 @@
 		</div>
 	</div>
 
-	<!-- Skills Section -->
+    <!-- ===================================== -->
+    <!-- Skills Section -->
+    <!-- ===================================== -->
 	<div class="skills section second" id="skills">
 		<div class="container">
 			<h1>Skills</h1>
@@ -275,89 +388,118 @@
 		</div>
 	</div>
 
-	<!-- Publications Section -->
+    <!-- ===================================== -->
+    <!-- Publications Section -->
+    <!-- ===================================== -->
 	<div class="award section second" id="publications">
 		<div class="container">
 			<h1>Publications</h1>
 
-			<!-- Loegler 2025 BioRXiv -->
-			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
-					<img src="img/Loegler2025_BioRXiv.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+			<!-- Loegler 2025 Nature -->
+			<a href="https://www.doi.org/10.1038/s41586-025-09637-0" target="_blank" class="publication-link">
+			<div class="publication-item">
+				<div class="pub-image">
+				<img src="img/Loegler2025_Nature.jpeg" alt="Publication Image">
 				</div>
-				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
-					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Graph-based pangenome analysis uncovers structural and functional impacts of allopolyploidization events</p>
-					<p style="color: #7290E9; margin: 2px 0;">Loegler V, Friedrich A, Schacherer J. 2025.</p>
-					<p style="color: #999999; margin: 2px 0;">BioRxiv. <a href="https://www.doi.org/10.1101/2025.08.26.672342" target="_blank">doi:10.1101/2025.08.26.672342</a></p>
+				<div class="pub-text">
+				<p class="pub-title">From genotype to phenotype with 1,086 near telomere-to-telomere yeast genomes</p>
+				<p class="pub-authors">Loegler V, Thiele P, Teyssonnière E, Tsouris A, Brach G, Cruaud C, Payen E, Engelen S, Dunham MJ, Hou J, Friedrich A, Schacherer J. 2025.</p>
+				<p class="pub-journal">Nature 1–10. <span class="pub-doi">doi:10.1038/s41586-025-09637-0</span></p>
 				</div>
 			</div>
+			</a>
+
+			<!-- Loegler 2025 BioRXiv -->
+			<a href="https://www.doi.org/10.1101/2025.08.26.672342" target="_blank" class="publication-link">
+			<div class="publication-item">
+				<div class="pub-image">
+				<img src="img/Loegler2025_BioRXiv.jpeg" alt="Publication Image">
+				</div>
+				<div class="pub-text">
+				<p class="pub-title">Graph-based pangenome analysis uncovers structural and functional impacts of allopolyploidization events</p>
+				<p class="pub-authors">Loegler V, Friedrich A, Schacherer J. 2025.</p>
+				<p class="pub-journal">BioRxiv. <span class="pub-doi">doi:10.1101/2025.08.26.672342</span></p>
+				</div>
+			</div>
+			</a>
 
 			<!-- Loegler 2025 NatCom -->
-			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
-					<img src="img/Loegler2025_NatCom.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+			<a href="https://www.doi.org/10.1038/s41467-025-60706-4" target="_blank" class="publication-link">
+			<div class="publication-item">
+				<div class="pub-image">
+				<img src="img/Loegler2025_NatCom.jpeg" alt="Publication Image">
 				</div>
-				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
-					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Whole-genome sequencing of 1,060 Brettanomyces bruxellensis isolates reveals significant phenotypic impact of acquired subgenomes in allopolyploids</p>
-					<p style="color: #7290E9; margin: 2px 0;">Loegler V, Runge JN, Eberlein C, Peltier E, Harrouard J, Miot-Sertier C, Albertin W, Friedrich A, Schacherer J. 2025.</p>
-					<p style="color: #999999; margin: 2px 0;">Nat Commun 16, 5500. <a href="https://www.doi.org/10.1038/s41467-025-60706-4" target="_blank">doi:10.1038/s41467-025-60706-4</a></p>
+				<div class="pub-text">
+				<p class="pub-title">Whole-genome sequencing of 1,060 <i>Brettanomyces bruxellensis</i> isolates reveals significant phenotypic impact of acquired subgenomes in allopolyploids</p>
+				<p class="pub-authors">Loegler V, Runge JN, Eberlein C, Peltier E, Harrouard J, Miot-Sertier C, Albertin W, Friedrich A, Schacherer J. 2025.</p>
+				<p class="pub-journal">Nat Commun 16, 5500. <span class="pub-doi">doi:10.1038/s41467-025-60706-4</span></p>
 				</div>
 			</div>
+			</a>
 
 			<!-- Loegler 2024 G3 -->
-			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
-					<img src="img/loegler2024.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+			<a href="https://www.doi.org/10.1093/g3journal/jkae245" target="_blank" class="publication-link">
+			<div class="publication-item">
+				<div class="pub-image">
+				<img src="img/loegler2024.jpeg" alt="Publication Image">
 				</div>
-				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
-					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Overview of the Saccharomyces cerevisiae population structure through the lens of 3,034 genomes</p>
-					<p style="color: #7290E9; margin: 2px 0;">Loegler V, Friedrich A, Schacherer J. 2024.</p>
-					<p style="color: #999999; margin: 2px 0;">G3 Genes|Genomes|Genetics 14:jkae245. <a href="https://www.doi.org/10.1093/g3journal/jkae245" target="_blank">doi:10.1093/g3journal/jkae245</a></p>
+				<div class="pub-text">
+				<p class="pub-title">Overview of the <i>Saccharomyces cerevisiae</i> population structure through the lens of 3,034 genomes</p>
+				<p class="pub-authors">Loegler V, Friedrich A, Schacherer J. 2024.</p>
+				<p class="pub-journal">G3 Genes|Genomes|Genetics 14:jkae245. <span class="pub-doi">doi:10.1093/g3journal/jkae245</span></p>
 				</div>
 			</div>
+			</a>
 
 			<!-- Teyssonniere 2024 PNAS -->
-			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
-					<img src="img/teyssonniere2024.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+			<a href="https://www.doi.org/10.1073/pnas.2319211121" target="_blank" class="publication-link">
+			<div class="publication-item">
+				<div class="pub-image">
+				<img src="img/teyssonniere2024.jpeg" alt="Publication Image">
 				</div>
-				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
-					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Species-wide quantitative transcriptomes and proteomes reveal distinct genetic control of gene expression variation in yeast</p>
-					<p style="color: #7290E9; margin: 2px 0;">Teyssonnière EM, Trébulle P, Muenzner J, Loegler V, Ludwig D, Amari F, Mülleder M, Friedrich A, Hou J, Ralser M, Schacherer J. 2024.</p>
-					<p style="color: #999999; margin: 2px 0;">PNAS 121:e2319211121. <a href="https://www.doi.org/10.1073/pnas.2319211121" target="_blank">doi:10.1073/pnas.2319211121</a></p>
+				<div class="pub-text">
+				<p class="pub-title">Species-wide quantitative transcriptomes and proteomes reveal distinct genetic control of gene expression variation in yeast</p>
+				<p class="pub-authors">Teyssonnière EM, Trébulle P, Muenzner J, Loegler V, Ludwig D, Amari F, Mülleder M, Friedrich A, Hou J, Ralser M, Schacherer J. 2024.</p>
+				<p class="pub-journal">PNAS 121:e2319211121. <span class="pub-doi">doi:10.1073/pnas.2319211121</span></p>
 				</div>
 			</div>
+			</a>
 
 			<!-- Caudal 2024 NatGen -->
-			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
-					<img src="img/caudal2024.jpeg" alt="Publication Image" style="width: 100%; height: 100px; object-fit: contain; background-color: white; border: 1px solid white; border-radius: 4px;">
+			<a href="https://www.doi.org/10.1038/s41588-024-01769-9" target="_blank" class="publication-link">
+			<div class="publication-item">
+				<div class="pub-image">
+				<img src="img/caudal2024.jpeg" alt="Publication Image">
 				</div>
-				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
-					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">Pan-transcriptome reveals a large accessory genome contribution to gene expression variation in yeast</p>
-					<p style="color: #7290E9; margin: 2px 0;">Caudal É, Loegler V, Dutreux F, Vakirlis N, Teyssonnière É, Caradec C, Friedrich A, Hou J, Schacherer J. 2024.</p>
-					<p style="color: #999999; margin: 2px 0;">Nat Genet 56:1278–1287. <a href="https://www.doi.org/10.1038/s41588-024-01769-9" target="_blank">doi:10.1038/s41588-024-01769-9</a></p>
+				<div class="pub-text">
+				<p class="pub-title">Pan-transcriptome reveals a large accessory genome contribution to gene expression variation in yeast</p>
+				<p class="pub-authors">Caudal É, Loegler V, Dutreux F, Vakirlis N, Teyssonnière É, Caradec C, Friedrich A, Hou J, Schacherer J. 2024.</p>
+				<p class="pub-journal">Nat Genet 56:1278–1287. <span class="pub-doi">doi:10.1038/s41588-024-01769-9</span></p>
 				</div>
 			</div>
+			</a>
 
 			<!-- Antoine 2021 -->
-			<div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-				<div class="pub-image" style="flex: 0 0 25%; padding: 10px; box-sizing: border-box;">
-					<!-- No image available, use empty white box -->
-					<div style="width: 100%; height: 100px; background-color: white; border: 1px solid white; border-radius: 4px;"></div>
+			<a href="https://www.doi.org/10.3390/genes12081125" target="_blank" class="publication-link">
+			<div class="publication-item">
+				<div class="pub-image">
+				<img src="img/antoine2021.png" alt="Publication Image">
 				</div>
-				<div class="pub-text" style="flex: 1 1 75%; padding-left: 15px;">
-					<p style="font-weight: bold; font-size: 13pt; margin: 0 0 2px 0;">RNA Modifications in Pathogenic Bacteria: Impact on Host Adaptation and Virulence</p>
-					<p style="color: #7290E9; margin: 2px 0;">Antoine L, Bahena-Ceron R, Devi Bunwaree H, Gobry M, Loegler V, Romby P, Marzi S. 2021.</p>
-					<p style="color: #999999; margin: 2px 0;">Genes 12:1125. <a href="https://www.doi.org/10.3390/genes12081125" target="_blank">doi:10.3390/genes12081125</a></p>
+				<div class="pub-text">
+				<p class="pub-title">RNA Modifications in Pathogenic Bacteria: Impact on Host Adaptation and Virulence</p>
+				<p class="pub-authors">Antoine L, Bahena-Ceron R, Devi Bunwaree H, Gobry M, Loegler V, Romby P, Marzi S. 2021.</p>
+				<p class="pub-journal">Genes 12:1125. <span class="pub-doi">doi:10.3390/genes12081125</span></p>
 				</div>
 			</div>
+			</a>
 
 		</div>
 	</div>
 
 
-	<!-- Communication -->
+    <!-- ===================================== -->
+    <!-- Communications Section -->
+    <!-- ===================================== -->
 	<div class="award section second" id="communications">
 		<div class="container">
 			<h1>Oral communications</h1>
@@ -376,7 +518,9 @@
 		</div>
 	</div>
 
-	<!-- Portfolio Section -->
+    <!-- ===================================== -->
+    <!-- Portfolio Section -->
+    <!-- ===================================== -->
 	<div class="work section second" id="portfolio">
 		<div class="container">
 			<h1>Portfolio</h1>
@@ -437,7 +581,9 @@
 		</div>
 	</div>
 
-	<!-- Quote -->
+    <!-- ===================================== -->
+    <!-- Footer -->
+    <!-- ===================================== -->
 	<footer>
 		<div class="container">
 			<ul class="social list-flat right">
